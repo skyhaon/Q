@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1em;
+    background: var(--bg);
+    color: var(--fg);
+}
+
+body.light {
+    --bg: #ffffff;
+    --fg: #000000;
+}
+
+body.dark {
+    --bg: #121212;
+    --fg: #ffffff;
+}
+
+#entries > div {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#results img {
+    height: 64px;
+}
+
+.hidden {
+    display: none;
+}
