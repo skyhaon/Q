@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Diary Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="diary">
+    <div id="theme-toggle">
+        <label for="themeSelect">Theme:</label>
+        <select id="themeSelect">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    <h1>Write a Diary</h1>
+    <div id="question"></div>
+    <form id="diaryForm">
+        <label>
+            Date:
+            <input type="date" id="entryDate" required>
+        </label>
+        <label>
+            Text:
+            <textarea id="entryText" required></textarea>
+        </label>
+        <label>
+            Photo:
+            <input type="file" id="entryPhoto" accept="image/*">
+        </label>
+        <div id="spotify">
+            <input type="text" id="spotifySearch" placeholder="Search Spotify">
+            <button type="button" id="searchBtn">Search</button>
+            <div id="results"></div>
+            <div id="selectedTrack"></div>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
